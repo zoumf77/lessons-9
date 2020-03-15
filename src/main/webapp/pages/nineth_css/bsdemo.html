@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>brother selector</title>
+  
+<style>
+	div~p{
+		color:red
+	}
+</style>
+
+<!-- 
+<style>
+div+p {
+	color: red
+}
+
+</style>
+ -->
+</head>
+<body>
+	<div>
+		<p>no red text</p>
+		<!--文字是非红色的-->
+		<div>no red text</div>
+		<p>red text</p>
+		<!--文字是红色的-->
+		<p>what color</p>
+	</div>
+</body>
+</html>
